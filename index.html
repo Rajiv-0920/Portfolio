@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+    <div id="overlay" class=""></div>
+    <div class="container">
+        <header>
+            <div class="head-name">Rajiv Kumar</div>
+            <nav>
+                <ul id="list" class="list">
+                    <li class="item"><a href="#skills-section">Skills</a></li>
+                    <li class="item"><a href="#projects-section">Project</a></li>
+                    <li class="item"><a href="#about-section">About</a></li>
+                    <li class="item"><a href="#contact">Contact Me</a></li>
+                </ul>
+                <i id="menu" class="fa-solid fa-bars menu"></i>
+            </nav>
+        </header>
+        <main>
+            <section class="hero-section">
+                <div class="hero-description">
+                    <h1 class="hero-title">Nice to meet you! I’m <div><span class="my-name">Rajiv Kumar <span
+                                    style="color:var(--dark-black)">.</span></span></div>
+                    </h1>
+                    <p>
+                        Based in the India, I'm a front-end developer
+                        passionate about building accessible web app
+                        that users love.
+                    </p>
+                    <div class="btn-container">
+                        <a href="#projects-section" class="btn primary"><i
+                                class="fa-solid fa-pager"></i>&nbsp;&nbsp;Projects</a>
+                        <a href="https://www.linkedin.com/in/rajiv4373" class="btn secondary">
+                            <i class="fa-brands fa-linkedin"></i>
+                            &nbsp;&nbsp;Linkedin</a>
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <img src="./assets/img.png" alt="My image">
+                </div>
+            </section>
+            <section id="skills-section" class="skills-section">
+                <hr>
+                <h2 class="title">Skills</h2>
+                <ul class="skills">
+                    <li class="skill">
+                        <h3>HTML</h2>
+                            <p>1 Year of Experience</p>
+                    </li>
+                    <hr>
+                    <li class="skill">
+                        <h3>CSS</h2>
+                            <p>1 Year of Experience</p>
+                    </li>
+                    <hr>
+                    <li class="skill">
+                        <h3>JavaScript</h2>
+                            <p>1 Year of Experience</p>
+                    </li>
+                    <hr>
+                    <li class="skill">
+                        <h3>Bootstrap</h3>
+                        <p>1 Year of Experience</p>
+                    </li>
+                    <hr>
+                    <li class="skill">
+                        <h3>C</h2>
+                            <p>1 Year of Experience</p>
+                    </li>
+                    <hr>
+                    <li class="skill">
+                        <h3>Git & Github</h2>
+                            <p>1 Year of Experience</p>
+                    </li>
+                    <hr>
+                </ul>
+            </section>
+            <section id="projects-section" class="my-projects">
+                <h2 class="title">Projects</h2>
+                <ul id="projects" class="projects">
+                </ul>
+                <button id="load-more" class="btn secondary">Load More</button>
+            </section>
+
+            <section id="about-section" class="about-section hero-section">
+                <div class="hero-description">
+                    <h1 class="hero-title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, totam optio praesentium
+                        eligendi rem non aliquam, ratione ab corrupti consequuntur expedita repellendus corporis tenetur
+                        id aspernatur repellat minima, hic eaque!
+                    </p>
+                    <div class="btn-container">
+                        <a href="#projects-section" class="btn primary"><i
+                                class="fa-solid fa-pager"></i>&nbsp;&nbsp;Projects</a>
+                    </div>
+                </div>
+                <div class="hero-img about-img">
+                    <img src="./assets/psd.jpg" alt="My image">
+                </div>
+            </section>
+            <section id="contact" class="contact-section">
+                <h2 class="title">Contact Me</h2>
+                <p>
+                    I would love to hear about your project and how I could help. Please fill in the form, and I'll get
+                    back to you as soon as possible.
+                </p>
+                <form id="contact-form" action="#">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                    <button class="btn submit" type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul class="footer-navigation">
+                    <li class="link">
+                        <a href="https://www.linkedin.com/in/rajiv4373"><img src="./assets/linkedin.svg"
+                                alt="Linkedin"></a>
+                    </li>
+                    <li class="link">
+                        <a href="https://x.com/rajiv_0920"><img src="./assets/icon-twitter.svg" alt="Twitter"></a>
+                    </li>
+                    <li class="link">
+                        <a href="https://www.frontendmentor.io/profile/Rajiv-0920"><img
+                                src="./assets/icon-frontend-mentor.svg" alt="Frontend Mentor"></a>
+                    </li>
+                    <li class="link">
+                        <a href="https://www.github.com/rajiv-0920"><img src="./assets/icon-github.svg"
+                                alt="Github"></a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
