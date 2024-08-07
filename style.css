@@ -173,7 +173,6 @@ header {
 }
 
 .my-name {
-    text-decoration: var(--Orange) underline;
     color: var(--Orange);
     animation: typing 2s alternate-reverse infinite;
     white-space: nowrap;
