@@ -156,8 +156,7 @@ function loadProjects() {
     }
     var li = document.createElement("li");
     li.classList.add("project");
-    let text = `
-                        <div class="pro-img">
+    let text = ` <div class="pro-img">
                             <img src="${projects[i].projectImageURL}" loading="lazy" alt="${projects[i].projectName} image">
                         </div>
                         <h3 class="pro-title">${projects[i].projectName}</h3>
