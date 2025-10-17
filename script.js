@@ -21,7 +21,7 @@ const projects = [
   {
     projectImageURL: "./assets/project2.png",
     projectName: "Family Restaurant",
-    projectTags: ["React JS", "Tailwind CSS"],
+    projectTags: ["React", "Tailwind"],
     projectURL: "https://family-restaurant-delta.vercel.app/",
     codeURL: "https://github.com/Rajiv-0920/Family-Restaurant",
     challengeBy: "",
@@ -162,9 +162,6 @@ function loadProjects() {
                         <h3 class="pro-title">${projects[i].projectName}</h3>
                         <ul class="tags">
                         </ul >`;
-    if (projects[i].challengeByURL) {
-      text += `<p>Challenged by <a href="${projects[i].challengeByURL}" class="front-end">${projects[i].challengeBy}</a></p>`;
-    }
     text += `<div class="actions">
                 <a href="${projects[i].projectURL}" class="btn primary">View
                     Project</a>
@@ -179,7 +176,7 @@ function loadProjects() {
     if (i === projects.length) break;
     for (var j = 0; j < projects[i].projectTags.length; j++) {
       var li = document.createElement("li");
-      li.classList.add("tag", projects[i].projectTags[j].toLowerCase());
+      li.classList.add("tag");
       li.innerText = projects[i].projectTags[j];
       tagsEl[i].appendChild(li);
     }
